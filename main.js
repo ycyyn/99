@@ -1,5 +1,9 @@
-var timestamp = Date.parse(new Date());
-var time = timestamp/1000 - 1358006408;
+var timestamp = new Date();
+var ycyyn=new Date(2020,2,18);
+var ycyynt=(ycyyn.getTime())/1000;
+var time = (timestamp.getTime())/1000 - ycyynt;
+
+console.log(timestamp.getMonth());
 
 function timedCount()
 {
@@ -8,7 +12,7 @@ time = time + 1;
 t = setTimeout("timedCount()",1000);
 }
 
-/** Ã¿ÈýÎ»Êý×ÖÌí¼ÓÒ»¸ö¶ººÅ£¬·½±ãÔÄ¶Á **/
+/** Ã¿ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ **/
 
 function fmoney(s, n)   
 {   
